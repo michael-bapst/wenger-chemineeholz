@@ -14,7 +14,7 @@
   <meta property="og:description" content="Qualitäts-Cheminéeholz im Raum Berner Mittelland und Seeland.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_CH">
-  <meta property="og:image" content="images/brennholz.jpeg">
+  <meta property="og:image" content="images/banner-wenger.jpg">
 
   <script type="application/ld+json">
   {
@@ -48,6 +48,7 @@
     <nav class="main-nav" aria-label="Hauptnavigation">
       <a href="#ueber-uns">Über uns</a>
       <a href="#brennholz">Brennholz</a>
+      <a href="#medien">Medien</a>
       <a href="#verkauf">Verkauf</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
@@ -55,8 +56,7 @@
 
   <main>
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-image" src="images/brennholz.jpeg" alt="Brennholz von Wenger Fritz Forstunternehmen" width="1280" height="960">
-      <div class="hero-shade" aria-hidden="true"></div>
+      <img class="hero-banner" src="images/banner-wenger.jpg" alt="Wenger Forstunternehmen" width="1916" height="821" fetchpriority="high">
       <div class="hero-content">
         <p class="eyebrow">Berner Mittelland · Seeland · Münchenbuchsee</p>
         <h1 id="hero-title">Qualitäts-Cheminéeholz aus Schweizer Wäldern.</h1>
@@ -79,6 +79,34 @@
           <p>Zu unseren Kunden gehören Privatpersonen, Förster und Gastronomiebetriebe im Raum Berner Mittelland und Seeland.</p>
         </div>
         <img src="images/holzbundle.jpeg" alt="Holzbündel bei Wenger Fritz Forstunternehmen" loading="lazy" width="1024" height="684">
+      </div>
+    </section>
+
+    <section class="section muted" id="medien">
+      <div class="section-inner">
+        <div class="section-heading compact-heading">
+          <p class="section-kicker">Medien</p>
+          <h2>Über uns berichtet.</h2>
+        </div>
+        <div class="media-grid">
+          <article class="media-card">
+            <button class="media-trigger" type="button"
+                    data-media-src="images/medien-schweizer-bauer-2014.jpg"
+                    data-media-pdf="downloads/schweizer-bauer-2014-05-10.pdf"
+                    data-media-title="Schweizer Bauer, 10. Mai 2014 – Bis zu 120 Kubik Scheitholz pro Tag"
+                    data-media-alt="Artikelseite aus dem Schweizer Bauer vom 10. Mai 2014 über Fritz Wenger und seine Schneidspaltanlage">
+              <span class="media-thumb">
+                <img src="images/medien-schweizer-bauer-2014-thumb.jpg" alt="Zeitungsseite Schweizer Bauer vom 10. Mai 2014" loading="lazy" width="760" height="937">
+              </span>
+              <span class="media-body">
+                <span class="media-meta">Schweizer Bauer · 10. Mai 2014</span>
+                <span class="media-title">Bis zu 120 Kubik Scheitholz pro Tag</span>
+                <span class="media-text">Porträt über Fritz und Helen Wenger: die Spezialisierung auf den Brennholzhandel, die Trocknung der Scheiter und die Investition in eine Schneidspaltanlage für Stämme bis 60 cm Durchmesser.</span>
+                <span class="media-cta">Artikel ansehen</span>
+              </span>
+            </button>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -199,6 +227,7 @@
 
   <nav class="bottom-nav" aria-label="Mobile Navigation">
     <a href="#start">Start</a>
+    <a href="#ueber-uns">Über uns</a>
     <a href="#brennholz">Brennholz</a>
     <a href="#verkauf">Verkauf</a>
     <a href="#kontakt">Kontakt</a>
@@ -211,6 +240,23 @@
       <a href="impressum-datenschutz.html">Impressum & Datenschutz</a>
     </div>
   </footer>
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+      <div class="lightbox-bar">
+        <p class="lightbox-title" id="lightbox-title"></p>
+        <div class="lightbox-tools">
+          <a class="lightbox-pdf" id="lightbox-pdf" href="#" target="_blank" rel="noopener">PDF</a>
+          <button class="lightbox-close" type="button" data-lightbox-close aria-label="Vorschau schliessen">&times;</button>
+        </div>
+      </div>
+      <div class="lightbox-stage">
+        <img id="lightbox-image" src="" alt="">
+      </div>
+      <p class="lightbox-hint">Zum Vergrössern auf die Seite tippen · Schliessen mit ×, Klick daneben oder Esc</p>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
 </body>
 </html>
 
