@@ -40,12 +40,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header" id="start">
+  <header class="site-header">
     <a class="brand" href="#start" aria-label="Wenger Forstunternehmen Startseite">
       <span class="brand-name">Wenger Fritz</span>
       <span class="brand-sub">Forstunternehmen</span>
     </a>
     <nav class="main-nav" aria-label="Hauptnavigation">
+      <a href="#start">Start</a>
       <a href="#ueber-uns">Über uns</a>
       <a href="#brennholz">Brennholz</a>
       <a href="#verkauf">Verkauf</a>
@@ -53,7 +54,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="start">
     <section class="hero" aria-labelledby="hero-title">
       <img class="hero-banner" src="images/banner-wenger.jpg" alt="Wenger Forstunternehmen" width="1916" height="821" fetchpriority="high">
       <div class="hero-content">
@@ -67,7 +68,7 @@
       </div>
     </section>
 
-    <section class="section about" id="ueber-uns">
+    <section class="section section-green about" id="ueber-uns">
       <div class="section-inner about-grid">
         <div>
           <p class="section-kicker">Über uns</p>
@@ -134,7 +135,7 @@
       </div>
     </section>
 
-    <section class="section muted" id="verkauf">
+    <section class="section section-green" id="verkauf">
       <div class="section-inner split">
         <div>
           <p class="section-kicker">Verkauf</p>
@@ -197,7 +198,8 @@
           </article>
           <article class="contact-item">
             <h3>Anfahrt</h3>
-            <p>Parkplätze stehen zur Verfügung.</p>
+            <p>Bielstrasse 79, 3053 Münchenbuchsee. Parkplätze stehen zur Verfügung.</p>
+            <a class="route-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Bielstrasse%2079%2C%203053%20M%C3%BCnchenbuchsee%2C%20Schweiz" target="_blank" rel="noopener">Route planen</a>
           </article>
         </div>
       </div>
