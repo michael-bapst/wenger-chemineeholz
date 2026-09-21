@@ -150,8 +150,6 @@ h3 { font-size: 1.22rem; margin-bottom: 0.55rem; }
 .contact-item a.route-link { color: var(--white); font-weight: 750; }
 .route-link:hover { background: #0f2f20; border-color: var(--wood); }
 .route-link:focus-visible { outline: 3px solid var(--wood); outline-offset: 2px; }
-.contact-address { grid-column: auto; }
-.contact-mail { grid-column: auto; }
 .site-footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1.4rem max(1.25rem, calc((100vw - var(--content)) / 2)); background: var(--green); color: rgba(255, 255, 255, 0.78); font-size: 0.9rem; }
 .site-footer a { color: var(--white); font-weight: 700; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 1rem; }
@@ -252,6 +250,7 @@ h3 { font-size: 1.22rem; margin-bottom: 0.55rem; }
 
 .contact-lines {
   display: grid;
+  align-content: start;
   gap: 0.9rem;
 }
 
@@ -461,9 +460,6 @@ body.is-locked { overflow: hidden; }
   .about img, .production-grid img { height: 350px; }
   .photo-row img { height: 310px; }
   .simple-grid article { min-height: 215px; }
-  .contact-details { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .contact-lines { align-content: start; }
-  .contact-line { grid-template-columns: 1fr; align-content: start; gap: 0.25rem; }
   .contact-intro { max-width: 900px; }
   .legal-wrap { max-width: 1000px; }
 }
